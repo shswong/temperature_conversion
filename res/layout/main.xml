@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="myClickHandler"
-        android:text="@string/calculate" >
+        android:text="@string/calc" >
     </Button>
 
     <TextView
@@ -47,5 +47,10 @@
         android:layout_height="132dp"
         android:text=""
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape" />
 
 </LinearLayout>

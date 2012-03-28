@@ -1,6 +1,8 @@
 package android.temperature;
 
 import android.app.Activity;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -20,7 +22,12 @@ public class ConvertActivity extends Activity
 		setContentView(R.layout.main);
 		text = (EditText) findViewById(R.id.editText1);
 		result = (TextView) findViewById(R.id.textView1);
+		
+		Resources res = getResources();
+		Drawable shape = res. getDrawable(R.drawable.shape);
 
+		TextView tv = (TextView)findViewById(R.id.textView1);
+		tv.setBackgroundDrawable(shape);
 	}
 
 	// This method is called at button click because we assigned the name to the
